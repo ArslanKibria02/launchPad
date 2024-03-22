@@ -115,18 +115,18 @@ const DasbhboardHeader = () => {
 
             <div className="col-3 col-md-3 col-xl-2 pt-1">
               <div onClick={handleURL} className="cursor-pointer">
-                Projects
+               LaunchPad
               </div>
             </div>
-            <div className="col-3 col-md-3 col-xl-2 pt-1">
+            {/* <div className="col-3 col-md-3 col-xl-2 pt-1">
               <div>Dashboard</div>
-            </div>
+            </div> */}
             <div className="col-5"></div>
           </div>
           <div className="col-12 col-md-6 d-flex">
             <div className="col-md-7"></div>
             <div className="col-md-5  d-flex justify-content-center">
-              <button
+              {/* <button
                 className="btn btn-dark"
                 onClick={() => {
                   setShow(true);
@@ -134,7 +134,9 @@ const DasbhboardHeader = () => {
               >
                 {" "}
                 Connect wallet
-              </button>
+              </button> */}
+
+              <w3m-button /> 
             </div>
           </div>
         </div>

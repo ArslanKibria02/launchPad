@@ -1,10 +1,7 @@
-import { Table } from "antd";
 import { useEffect, useState } from "react";
 import DataTable from "react-data-table-component";
-import AuthService from "../../services/AuthService";
 import { Dropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { Images } from "../Config/Images";
 
 const TableView = ({ header, data }: any) => {
   const [table, setTable] = useState<any>();
@@ -16,7 +13,7 @@ const TableView = ({ header, data }: any) => {
         minHeight: "60px",
         // marginBottom: "9px",
         border: "none",
-        backgroundColor: "rgb(247 246 246)",
+        backgroundColor: "#23232b",
         // override the row height
       },
     },
@@ -36,7 +33,7 @@ const TableView = ({ header, data }: any) => {
         paddingLeft: "8px", // override the cell padding for data cells
         paddingRight: "8px",
         fontSize: "12px",
-
+        color: "white",
         justifyContent: "start", // Center the content horizontally
         alignItems: "center", // Center the content vertically (if needed)
       },

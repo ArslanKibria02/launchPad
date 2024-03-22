@@ -1,10 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { Tab, Tabs } from "react-bootstrap";
-import DealToken from "./DealToken";
-import OverView from "./OverView";
+import { Tabs } from "react-bootstrap";
 
-function ProjectDetails() {
-  const [selectTab, setSelectedTab] = useState("OverView");
+function OverView() {
   const cardBlocks = [
     {
       title: "Title1",
@@ -31,46 +28,33 @@ function ProjectDetails() {
         "Invest in the future leaders of Web3 Invest in the future leaders of Web3 Invest in the future leaders of Web3 Invest in the future leaders of Web3 Invest in the future leaders of Web3 Invest in the future leaders of Web3 Invest in the future leaders of Web3 Invest in the future leaders of Web3 Invest in the future leaders of Web3 Invest in the future leaders of Web3 Invest in the future leaders of Web3 Invest in the future leaders of Web3 Invest in the future leaders of Web3 Invest in the future leaders of Web3 Invest in the future leaders of Web3 Invest in the future leaders of Web3 Invest in the future leaders of Web3 Invest in the future leaders of Web3 Invest in the future leaders of Web3",
     },
   ];
-  const tapOptions = [
-    {
-      title: "Over View",
-      key: "OverView",
-      folder:<OverView/>,
-    },
-    {
-      title: "Deal & Tokennomic",
-      key: "deal",
-      folder: <DealToken/>,
-    },
-  ];
   return (
     <>
-      <div className="card-detail d-flex justify-content-center"></div>
-      <div
-        style={{ marginTop: "9rem", marginBottom: "5rem" }}
-        className="d-flex justify-content-center"
-      >
-        <div className="col-8 mb-3 align-items-center">
-        <Tabs
-            id="controlled-tab-example"
-            className="mt-30 position-relative tabs-overflow mt-3"
-            activeKey={selectTab}
-            onSelect={(tab: any) => {
-              setSelectedTab(tab);
-            }}
-          >
-            {tapOptions.map((item: any) => (
-              <Tab eventKey={item.key} title={item.title}>
-                {selectTab === item.key && item.folder}
-              </Tab>
-            ))}
-          </Tabs>
-         
-        </div>
-      </div>
-      <div className="col-lg-12 col-xl-12 col-12 pt-4 d-flex w-100 overflow-auto"></div>
+      {cardBlocks?.map((item, index) => {
+        return (
+          <>
+            <div className="pt-4 ">
+              <div className="d-flex flex-wrap theme-color-text">
+                {item.title}
+              </div>
+              <h1
+                className="d-flex flex-wrap pt-4 theme-color-text"
+                style={{ lineHeight: "2rem" }}
+              >
+                {item.detail}
+              </h1>
+              <div
+                className="d-flex flex-wrap pt-4"
+                style={{ lineHeight: "2rem", color: "white" }}
+              >
+                {item.description}
+              </div>
+            </div>
+          </>
+        );
+      })}
     </>
   );
 }
 
-export default ProjectDetails;
+export default OverView;
