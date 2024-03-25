@@ -17,7 +17,10 @@ function Dashboard() {
 
   return (
     <>
-      <div className="background d-flex justify-content-center">
+      <div
+        className="background d-flex justify-content-center"
+        style={{ overflow: "hidden" }}
+      >
         <div className="col-10">
           <div className="col-5">
             <div className="dashboard-title "> Example title for</div>
