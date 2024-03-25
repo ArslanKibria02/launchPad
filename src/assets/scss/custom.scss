@@ -1012,7 +1012,7 @@ ul.mt-30.position-relative.tabs-overflow.mt-3.nav.nav-tabs {
   height: 100vh;
   background-repeat: no-repeat;
   align-items: center;
-  background-image: url("https://pad.chaingpt.org/images/landing/pad.png") !important;
+  background-image: url("../images/pad.png") !important;
 }
 .dashboard-title{
   color: white;
@@ -1325,84 +1325,6 @@ min-height: 500px!important;
 .process-model.contact-us-tab li.visited i {
   border-color: #e5e5e5; 
 }
-@media (max-width: 800px) {
-  .mobile-responsive{
-    display: block!important;
-  }
-  form {
-    height: auto;
-  }
-  .dashboard-title{
-    color: white;
-    font-size: 54px;
-    font-weight: bold;
-    line-height: 1.25;
-  }
-  .container {
-    width: 100%;
-    /* min-height: 100vh; */
-    height: auto;
-    position: relative;
-    display: flex;
-
-    /* overflow-y: auto !important */
-  }
-
-  .form-container {
-    position: relative;
-    height: 100%;
-    transition: all 0.6s ease-in-out;
-  }
-
-  .forgot-container {
-    display: none;
-  }
-
-  .sign-in-container {
-    left: 0;
-    top: 10%;
-    width: 100%;
-    z-index: 2;
-  }
-
-  .container.right-panel-active .sign-in-container {
-    display: none;
-  }
-
-  .container.right-panel-active .forgot-container {
-    transform: unset;
-    opacity: 1;
-    z-index: 5;
-    top: 20%;
-    right: 0;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    animation: show 0.6s;
-  }
-
-  .btn-theme {
-    line-height: inherit;
-  }
-
-  .flexing {
-    min-height: 100vh;
-    padding: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
-@media (max-width: 420px) {
-  .dashboard-title{
-    color: white;
-    font-size: 34px;
-    font-weight: bold;
-    line-height: 1.25;
-  }
- 
-}
-
 
 
 .jss178 {
@@ -1529,4 +1451,100 @@ min-height: 500px!important;
 }
 .jss115 {
   font: normal normal normal 12px / 16px Violet Sans;
+}
+.jss919 {
+  position: relative;
+}
+.jss920 {
+  font: 14px / 24px Violet Sans;
+  color: #fff;
+  width: 320px;
+  border: 1px solid #44454B;
+  height: 36px;
+  margin: 0;
+  padding: 0 60px 0 12px;
+  background: #292929;
+  border-radius: 4px;
+}
+.jss924 {
+  top: 10px;
+  right: 12px;
+  position: absolute;
+}
+@media (max-width: 800px) {
+  .mobile-responsive{
+    display: block!important;
+  }
+  form {
+    height: auto;
+  }
+  .dashboard-title{
+    color: white;
+    font-size: 54px;
+    font-weight: bold;
+    line-height: 1.25;
+  }
+  .container {
+    width: 100%;
+    /* min-height: 100vh; */
+    height: auto;
+    position: relative;
+    display: flex;
+
+    /* overflow-y: auto !important */
+  }
+
+  .form-container {
+    position: relative;
+    height: 100%;
+    transition: all 0.6s ease-in-out;
+  }
+
+  .forgot-container {
+    display: none;
+  }
+
+  .sign-in-container {
+    left: 0;
+    top: 10%;
+    width: 100%;
+    z-index: 2;
+  }
+
+  .container.right-panel-active .sign-in-container {
+    display: none;
+  }
+
+  .container.right-panel-active .forgot-container {
+    transform: unset;
+    opacity: 1;
+    z-index: 5;
+    top: 20%;
+    right: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    animation: show 0.6s;
+  }
+
+  .btn-theme {
+    line-height: inherit;
+  }
+
+  .flexing {
+    min-height: 100vh;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 420px) {
+  .dashboard-title{
+    color: white;
+    font-size: 34px;
+    font-weight: bold;
+    line-height: 1.25;
+  }
+ 
 }

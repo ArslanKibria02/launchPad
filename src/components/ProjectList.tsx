@@ -231,10 +231,10 @@ function ProjectList() {
                   return (
                     <div key={id}>
                       <div className="d-flex align-items-center justify-content-between">
-                        <div className="col-md-6 mb-1 jss869">
+                        <div className="col-md-8 mb-1 jss869">
                           {profile.label}
                         </div>
-                        <div className="d-flex col-md-6 mb-1 justify-content-end font-weight-bold jss870">
+                        <div className="d-flex col-md-4 mb-1 justify-content-end font-weight-bold jss870">
                           {profile.title}
                         </div>
                       </div>
